@@ -31,7 +31,7 @@ let a8 = selectedOption8 ? selectedOption8.value.toLowerCase() : '';
 const message = `Just like your name, you brighten the darkest nights and make life magical.On your special day, I just want to remind you how precious you are, dreams that always come true, and happiness that shines brighter than all the stars combined.I will always be there by your side. Keep glowing, keep smiling, and keep being the amazing YOU! 💖Cheers to another year of adventures, memories, and friendship!Love & Wishes – [Your Daffer]`;
 
 let index = 0;
-const speed = 50; // typing speed in ms
+const speed = 35; // typing speed in ms
 
 function typeWriter() {
     if (index < message.length) {
@@ -81,4 +81,5 @@ typeWriter();
             typing();
         }
         function playMusic() { const music = document.getElementById("bgMusic"); music.volume = 0.5; music.play().catch(()=>{}); }
+
         function toggleMute() { const music = document.getElementById("bgMusic"); const btn = document.getElementById("muteBtn"); music.muted = !music.muted; btn.textContent = music.muted ? "Unmute" : "Mute"; }
