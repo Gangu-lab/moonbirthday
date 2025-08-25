@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday MOON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quizPage">
+        <h1>🎉 Happy Birthday MY MOON 🎉</h1>
+        <h1> Treasure Hunt For You</h1>
+        <p>Solve all the questions to unlock your surprise!</p>
+        <div>
+            <h2>Question 1:</h2>
+            <p>What is the cute nickname that I always call you?</p>
+            <input type="text" id="q1">
+        </div>
+
+        <div>
+            <h2>Question 2:</h2>
+            <p>What is our mutual favorite color?</p>
+            <input type="text" id="q2">
+        </div>
+
+        <div>
+            <h2>Question 3:</h2>
+            <p>What’s your favorite animal?</p>
+            <input type="text" id="q3">
+        </div>
+
+        <div>
+            <h2>Question 4:</h2>
+            <p>What special nickname do you always call me?</p>
+            <input type="text" id="q4">
+        </div>
+
+        <div class="question">
+            <h2>Question 5:</h2>
+            <p>Do you know how to ride a cycle?</p>
+            <label><input type="radio" name="q5" value="Yes">Yes</label><br>
+            <label><input type="radio" name="q5" value="No">No</label><br>
+        </div>
+
+        <div>
+            <h2>Question 6:</h2>
+            <p>What’s our mutual birthday month?</p>
+            <input type="text" id="q6">
+        </div>
+
+        <h2>Question 7:</h2>
+        <div class="question">
+            <p>Which of these are your favorite foods?</p>
+            <label><input type="checkbox" name="q7" value="Shawarma">Shawarma</label><br>
+            <label><input type="checkbox" name="q7" value="Biryani">Biryani</label><br>
+            <label><input type="checkbox" name="q7" value="IceCream">IceCream</label><br>
+            <label><input type="checkbox" name="q7" value="Dairy Milk">Dairy Milk</label><br>
+        </div>
+        <div class="question">
+            <h2>Question 8:</h2>
+            <p>COA First Module name?</p>
+            <label><input type="radio" name="q8" value="Processor and Control Unit">Processor and Control Unit</label><br>
+            <label><input type="radio" name="q8" value="Fundamentals of CO">Fundamentals of CO</label><br>
+            <label><input type="radio" name="q8" value="Registers and Capacitors">Registers and Capacitors</label><br>
+
+        </div>
+        <div class="question">
+            <h2>Question 9:</h2>
+            <p>How do you spell lyrics word?</p>
+            <label><input type="radio" name="q9" value="lyrics">lyrics</label><br>
+            <label><input type="radio" name="q9" value="rylics">rylics</label><br>
+        </div>
+        <p style="color: #ff0077ff; font-weight: bold; font-size: 14px;">Note: Please keep full sound in your device to enjoy the surprise!</p>
+
+        <button onclick="checkAnswers()">Unlock Surprise</button>
+        <p id="error" style="color: red; display: none;">Oops! One or more answers are wrong. Try again!</p>
+    </div>
+
+  <div id="finalPage"> <button id="muteBtn" onclick="toggleMute()">Mute</button> <audio id="bgMusic" loop> <source src="music.mp3.mpeg" type="audio/mpeg"> </audio> <div class="final-message"> <h1 id="birthday-heading">HAPPY BIRTHDAY MOON! 🌙✨</h1> <p id="typed-message"></p> </div> </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

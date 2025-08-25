@@ -1,0 +1,172 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        h1, h2, p {
+            margin: 15px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #00ffea;
+            color: #000;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #00aaff;
+            color: #fff;
+        }
+
+        #quizPage {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #finalPage {
+            display: none;
+            background: #000;
+            padding: 40px 20px;
+            min-height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        #finalPage h1 {
+            font-size: 50px;
+            color: #00ffff;
+            animation: neonGlow 1.5s infinite alternate;
+        }
+
+        #finalPage h2 {
+            font-size: 25px;
+            color: #00ffea;
+            margin-top: 20px;
+            animation: neonGlowAlt 2s infinite alternate;
+        }
+
+        #typedMessage {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #ffff66;
+            white-space: pre-line;
+            border-right: 3px solid #ffff66;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            animation: caretBlink 0.8s infinite;
+        }
+
+        #muteBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 12px;
+            background: #00ffea;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        @keyframes neonGlow {
+            from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffea, 0 0 30px #00ffff; }
+            to { text-shadow: 0 0 20px #00ffea, 0 0 40px #00ffff, 0 0 60px #00ffea; }
+        }
+        @keyframes neonGlowAlt {
+            from { text-shadow: 0 0 10px #ffff66, 0 0 20px #00ffea; }
+            to { text-shadow: 0 0 20px #ffff66, 0 0 40px #00ffea; }
+        }
+        @keyframes caretBlink {
+            50% { border-color: transparent; }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            animation: fall 3s linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+
+        /* Proper spacing for checkboxes and radios */
+        .question label {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px; /* controls space between box and text */
+            font-size: 18px;
+            color: #fff;
+            margin: 3px 0;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin: 0; /* removes default browser margin */
+            accent-color: #00ffea; /* neon highlight */
+            transform: scale(1.2);
+            vertical-align: middle;
+            width: 18px;
+            height: 18px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 19px;
+        }
+        .final-message {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    padding: 30px;
+}
+
+#birthday-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #00ffff, 0 0 40px #00ffff;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+#typed-message {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    white-space: pre-line; /* keeps line breaks */
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #00ffff, 0 0 40px #00ffff;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Neon glowing animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #00ffff, 0 0 40px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #00ffff;
+    }
+}
